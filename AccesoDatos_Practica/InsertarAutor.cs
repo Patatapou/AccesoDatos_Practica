@@ -11,9 +11,9 @@ using AccesoDatos;
 
 namespace AccesoDatos_Practica
 {
-    public partial class frmInsertarAutor : Form
+    public partial class InsertarAutor : Form
     {
-        public frmInsertarAutor()
+        public InsertarAutor()
         {
             InitializeComponent();
         }
@@ -26,10 +26,10 @@ namespace AccesoDatos_Practica
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             Datos datos = new Datos();
-            bool f = datos.comando("insert into authors values('" + txtId.Text + "','" +
+            bool f = datos.comando("insert into authors values('" + mtbId.Text + "','" +
                 txtLast.Text + "','" + txtFirst.Text + "','" + txtPhone.Text + "','" +
                 txtAddress.Text + "','" + txtCity.Text + "','" + txtState.Text + "','" +
-                txtZip.Text + "'," + (chkContract.Checked ? 1 : 0) + ")");
+                mtbZip.Text + "'," + (chkContract.Checked ? 1 : 0) + ")");
             if (f == true)
             {
                 MessageBox.Show("Datos insertados", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -39,6 +39,11 @@ namespace AccesoDatos_Practica
             {
                 MessageBox.Show("Error al insertar", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void InsertarAutor_Load(object sender, EventArgs e)
+        {
+            mtbId.Focus();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace AccesoDatos
 {
-    partial class frmActualizaAutor
+    partial class ActualizaAutor
     {
         /// <summary>
         /// Required designer variable.
@@ -47,6 +47,7 @@
             chkContract = new CheckBox();
             btnActualizar = new Button();
             btnCancelar = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -61,6 +62,8 @@
             // 
             // txtId
             // 
+            txtId.BorderStyle = BorderStyle.FixedSingle;
+            txtId.Cursor = Cursors.No;
             txtId.Location = new Point(10, 30);
             txtId.Margin = new Padding(2);
             txtId.Name = "txtId";
@@ -70,6 +73,8 @@
             // 
             // txtFirst
             // 
+            txtFirst.BorderStyle = BorderStyle.FixedSingle;
+            txtFirst.Cursor = Cursors.IBeam;
             txtFirst.Location = new Point(10, 90);
             txtFirst.Margin = new Padding(2);
             txtFirst.Name = "txtFirst";
@@ -88,6 +93,8 @@
             // 
             // txtLast
             // 
+            txtLast.BorderStyle = BorderStyle.FixedSingle;
+            txtLast.Cursor = Cursors.IBeam;
             txtLast.Location = new Point(230, 90);
             txtLast.Margin = new Padding(2);
             txtLast.Name = "txtLast";
@@ -106,6 +113,8 @@
             // 
             // txtPhone
             // 
+            txtPhone.BorderStyle = BorderStyle.FixedSingle;
+            txtPhone.Cursor = Cursors.IBeam;
             txtPhone.Location = new Point(10, 151);
             txtPhone.Margin = new Padding(2);
             txtPhone.Name = "txtPhone";
@@ -124,6 +133,8 @@
             // 
             // txtAddress
             // 
+            txtAddress.BorderStyle = BorderStyle.FixedSingle;
+            txtAddress.Cursor = Cursors.IBeam;
             txtAddress.Location = new Point(150, 151);
             txtAddress.Margin = new Padding(2);
             txtAddress.Name = "txtAddress";
@@ -139,10 +150,11 @@
             label5.Size = new Size(62, 20);
             label5.TabIndex = 9;
             label5.Text = "Address";
-            label5.Click += label5_Click;
             // 
             // txtZip
             // 
+            txtZip.BorderStyle = BorderStyle.FixedSingle;
+            txtZip.Cursor = Cursors.IBeam;
             txtZip.Location = new Point(293, 218);
             txtZip.Margin = new Padding(2);
             txtZip.Name = "txtZip";
@@ -161,6 +173,8 @@
             // 
             // txtCity
             // 
+            txtCity.BorderStyle = BorderStyle.FixedSingle;
+            txtCity.Cursor = Cursors.IBeam;
             txtCity.Location = new Point(10, 218);
             txtCity.Margin = new Padding(2);
             txtCity.Name = "txtCity";
@@ -179,6 +193,8 @@
             // 
             // txtState
             // 
+            txtState.BorderStyle = BorderStyle.FixedSingle;
+            txtState.Cursor = Cursors.IBeam;
             txtState.Location = new Point(150, 218);
             txtState.Margin = new Padding(2);
             txtState.Name = "txtState";
@@ -198,6 +214,7 @@
             // chkContract
             // 
             chkContract.AutoSize = true;
+            chkContract.Cursor = Cursors.Hand;
             chkContract.Location = new Point(10, 265);
             chkContract.Margin = new Padding(2);
             chkContract.Name = "chkContract";
@@ -208,7 +225,8 @@
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(249, 261);
+            btnActualizar.Cursor = Cursors.Hand;
+            btnActualizar.Location = new Point(150, 262);
             btnActualizar.Margin = new Padding(2);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(90, 27);
@@ -219,6 +237,7 @@
             // 
             // btnCancelar
             // 
+            btnCancelar.Cursor = Cursors.Hand;
             btnCancelar.Location = new Point(343, 262);
             btnCancelar.Margin = new Padding(2);
             btnCancelar.Name = "btnCancelar";
@@ -228,11 +247,25 @@
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
             // 
-            // frmActualizaAutor
+            // button1
+            // 
+            button1.Cursor = Cursors.Hand;
+            button1.Location = new Point(249, 262);
+            button1.Margin = new Padding(2);
+            button1.Name = "button1";
+            button1.Size = new Size(90, 27);
+            button1.TabIndex = 19;
+            button1.Text = "Eliminar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // ActualizaAutor
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Honeydew;
             ClientSize = new Size(446, 301);
+            Controls.Add(button1);
             Controls.Add(btnCancelar);
             Controls.Add(btnActualizar);
             Controls.Add(chkContract);
@@ -253,7 +286,7 @@
             Controls.Add(txtId);
             Controls.Add(label1);
             Margin = new Padding(2);
-            Name = "frmActualizaAutor";
+            Name = "ActualizaAutor";
             Text = "Actualiza Autor";
             Load += frmActualizaAutor_Load;
             ResumeLayout(false);
@@ -281,5 +314,6 @@
         private CheckBox chkContract;
         private Button btnActualizar;
         private Button btnCancelar;
+        private Button button1;
     }
 }

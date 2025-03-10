@@ -1,6 +1,6 @@
 ﻿namespace AccesoDatos_Practica
 {
-    partial class frmInsertarAutor
+    partial class InsertarEmp
     {
         /// <summary>
         /// Required designer variable.
@@ -28,254 +28,256 @@
         /// </summary>
         private void InitializeComponent()
         {
+            dtpHireDate = new DateTimePicker();
             btnCancelar = new Button();
             btnActualizar = new Button();
-            chkContract = new CheckBox();
             label8 = new Label();
-            txtState = new TextBox();
+            txtJobLvl = new TextBox();
             label7 = new Label();
-            txtCity = new TextBox();
             label6 = new Label();
-            txtZip = new TextBox();
             label5 = new Label();
-            txtAddress = new TextBox();
             label4 = new Label();
-            txtPhone = new TextBox();
+            txtMinit = new TextBox();
             label3 = new Label();
             txtLast = new TextBox();
             label2 = new Label();
             txtFirst = new TextBox();
-            txtId = new TextBox();
             label1 = new Label();
+            cbJobId = new ComboBox();
+            cbPubId = new ComboBox();
+            mtbId = new MaskedTextBox();
             SuspendLayout();
+            // 
+            // dtpHireDate
+            // 
+            dtpHireDate.Cursor = Cursors.Hand;
+            dtpHireDate.Location = new Point(20, 178);
+            dtpHireDate.Name = "dtpHireDate";
+            dtpHireDate.Size = new Size(295, 27);
+            dtpHireDate.TabIndex = 56;
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(350, 268);
+            btnCancelar.Cursor = Cursors.Hand;
+            btnCancelar.Location = new Point(530, 228);
             btnCancelar.Margin = new Padding(2);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(90, 27);
-            btnCancelar.TabIndex = 37;
+            btnCancelar.TabIndex = 55;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(256, 267);
+            btnActualizar.Cursor = Cursors.Hand;
+            btnActualizar.Location = new Point(436, 228);
             btnActualizar.Margin = new Padding(2);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(90, 27);
-            btnActualizar.TabIndex = 36;
+            btnActualizar.TabIndex = 54;
             btnActualizar.Text = "Insertar";
             btnActualizar.UseVisualStyleBackColor = true;
             btnActualizar.Click += btnActualizar_Click;
             // 
-            // chkContract
-            // 
-            chkContract.AutoSize = true;
-            chkContract.Location = new Point(17, 271);
-            chkContract.Margin = new Padding(2);
-            chkContract.Name = "chkContract";
-            chkContract.Size = new Size(87, 24);
-            chkContract.TabIndex = 35;
-            chkContract.Text = "Contract";
-            chkContract.UseVisualStyleBackColor = true;
-            // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(157, 201);
+            label8.Location = new Point(497, 82);
             label8.Margin = new Padding(2, 0, 2, 0);
             label8.Name = "label8";
-            label8.Size = new Size(43, 20);
-            label8.TabIndex = 34;
-            label8.Text = "State";
+            label8.Size = new Size(70, 20);
+            label8.TabIndex = 53;
+            label8.Text = "Job Level";
             // 
-            // txtState
+            // txtJobLvl
             // 
-            txtState.Location = new Point(157, 224);
-            txtState.Margin = new Padding(2);
-            txtState.Name = "txtState";
-            txtState.Size = new Size(121, 27);
-            txtState.TabIndex = 33;
+            txtJobLvl.BorderStyle = BorderStyle.FixedSingle;
+            txtJobLvl.Cursor = Cursors.IBeam;
+            txtJobLvl.Location = new Point(497, 105);
+            txtJobLvl.Margin = new Padding(2);
+            txtJobLvl.Name = "txtJobLvl";
+            txtJobLvl.Size = new Size(121, 27);
+            txtJobLvl.TabIndex = 52;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(17, 201);
+            label7.Location = new Point(20, 82);
             label7.Margin = new Padding(2, 0, 2, 0);
             label7.Name = "label7";
-            label7.Size = new Size(34, 20);
-            label7.TabIndex = 32;
-            label7.Text = "City";
-            // 
-            // txtCity
-            // 
-            txtCity.Location = new Point(17, 224);
-            txtCity.Margin = new Padding(2);
-            txtCity.Name = "txtCity";
-            txtCity.Size = new Size(121, 27);
-            txtCity.TabIndex = 31;
+            label7.Size = new Size(51, 20);
+            label7.TabIndex = 51;
+            label7.Text = "Job ID";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(300, 201);
+            label6.Location = new Point(270, 82);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(69, 20);
-            label6.TabIndex = 30;
-            label6.Text = "ZIP Code";
-            // 
-            // txtZip
-            // 
-            txtZip.Location = new Point(300, 224);
-            txtZip.Margin = new Padding(2);
-            txtZip.Name = "txtZip";
-            txtZip.Size = new Size(121, 27);
-            txtZip.TabIndex = 29;
+            label6.Size = new Size(53, 20);
+            label6.TabIndex = 49;
+            label6.Text = "Pub ID";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(157, 135);
+            label5.Location = new Point(20, 155);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(62, 20);
-            label5.TabIndex = 28;
-            label5.Text = "Address";
-            // 
-            // txtAddress
-            // 
-            txtAddress.Location = new Point(157, 157);
-            txtAddress.Margin = new Padding(2);
-            txtAddress.Name = "txtAddress";
-            txtAddress.Size = new Size(283, 27);
-            txtAddress.TabIndex = 27;
+            label5.Size = new Size(71, 20);
+            label5.TabIndex = 47;
+            label5.Text = "Hire date";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(17, 135);
+            label4.Location = new Point(353, 155);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(50, 20);
-            label4.TabIndex = 26;
-            label4.Text = "Phone";
+            label4.Size = new Size(43, 20);
+            label4.TabIndex = 46;
+            label4.Text = "Minit";
             // 
-            // txtPhone
+            // txtMinit
             // 
-            txtPhone.Location = new Point(17, 157);
-            txtPhone.Margin = new Padding(2);
-            txtPhone.Name = "txtPhone";
-            txtPhone.Size = new Size(121, 27);
-            txtPhone.TabIndex = 25;
+            txtMinit.BorderStyle = BorderStyle.FixedSingle;
+            txtMinit.Cursor = Cursors.IBeam;
+            txtMinit.Location = new Point(353, 177);
+            txtMinit.Margin = new Padding(2);
+            txtMinit.Name = "txtMinit";
+            txtMinit.Size = new Size(121, 27);
+            txtMinit.TabIndex = 45;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(237, 74);
+            label3.Location = new Point(395, 14);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
             label3.Size = new Size(79, 20);
-            label3.TabIndex = 24;
+            label3.TabIndex = 44;
             label3.Text = "Last Name";
             // 
             // txtLast
             // 
-            txtLast.Location = new Point(237, 96);
+            txtLast.BorderStyle = BorderStyle.FixedSingle;
+            txtLast.Cursor = Cursors.IBeam;
+            txtLast.Location = new Point(395, 36);
             txtLast.Margin = new Padding(2);
             txtLast.Name = "txtLast";
-            txtLast.Size = new Size(203, 27);
-            txtLast.TabIndex = 23;
+            txtLast.Size = new Size(223, 27);
+            txtLast.TabIndex = 43;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(17, 74);
+            label2.Location = new Point(156, 14);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(80, 20);
-            label2.TabIndex = 22;
+            label2.TabIndex = 42;
             label2.Text = "First Name";
             // 
             // txtFirst
             // 
-            txtFirst.Location = new Point(17, 96);
+            txtFirst.BorderStyle = BorderStyle.FixedSingle;
+            txtFirst.Cursor = Cursors.IBeam;
+            txtFirst.Location = new Point(156, 36);
             txtFirst.Margin = new Padding(2);
             txtFirst.Name = "txtFirst";
-            txtFirst.Size = new Size(203, 27);
-            txtFirst.TabIndex = 21;
-            // 
-            // txtId
-            // 
-            txtId.Location = new Point(17, 36);
-            txtId.Margin = new Padding(2);
-            txtId.Name = "txtId";
-            txtId.Size = new Size(121, 27);
-            txtId.TabIndex = 20;
+            txtFirst.Size = new Size(224, 27);
+            txtFirst.TabIndex = 41;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(17, 13);
+            label1.Location = new Point(20, 14);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(22, 20);
-            label1.TabIndex = 19;
+            label1.TabIndex = 39;
             label1.Text = "Id";
             // 
-            // frmInsertarAutor
+            // cbJobId
+            // 
+            cbJobId.Cursor = Cursors.Hand;
+            cbJobId.FormattingEnabled = true;
+            cbJobId.Location = new Point(20, 105);
+            cbJobId.Name = "cbJobId";
+            cbJobId.Size = new Size(234, 28);
+            cbJobId.TabIndex = 57;
+            // 
+            // cbPubId
+            // 
+            cbPubId.Cursor = Cursors.Hand;
+            cbPubId.FormattingEnabled = true;
+            cbPubId.Location = new Point(270, 104);
+            cbPubId.Name = "cbPubId";
+            cbPubId.Size = new Size(204, 28);
+            cbPubId.TabIndex = 58;
+            // 
+            // mtbId
+            // 
+            mtbId.BorderStyle = BorderStyle.FixedSingle;
+            mtbId.Cursor = Cursors.IBeam;
+            mtbId.Location = new Point(20, 37);
+            mtbId.Mask = "LLL-00000-L";
+            mtbId.Name = "mtbId";
+            mtbId.Size = new Size(125, 27);
+            mtbId.TabIndex = 59;
+            // 
+            // InsertarEmp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(467, 317);
+            BackColor = Color.LavenderBlush;
+            ClientSize = new Size(654, 260);
+            Controls.Add(mtbId);
+            Controls.Add(cbPubId);
+            Controls.Add(cbJobId);
+            Controls.Add(dtpHireDate);
             Controls.Add(btnCancelar);
             Controls.Add(btnActualizar);
-            Controls.Add(chkContract);
             Controls.Add(label8);
-            Controls.Add(txtState);
+            Controls.Add(txtJobLvl);
             Controls.Add(label7);
-            Controls.Add(txtCity);
             Controls.Add(label6);
-            Controls.Add(txtZip);
             Controls.Add(label5);
-            Controls.Add(txtAddress);
             Controls.Add(label4);
-            Controls.Add(txtPhone);
+            Controls.Add(txtMinit);
             Controls.Add(label3);
             Controls.Add(txtLast);
             Controls.Add(label2);
             Controls.Add(txtFirst);
-            Controls.Add(txtId);
             Controls.Add(label1);
-            Name = "frmInsertarAutor";
-            Text = "frmInsertarAutor";
+            Name = "InsertarEmp";
+            Text = "InsertarEmp";
+            Load += InsertarEmp_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
+        private DateTimePicker dtpHireDate;
         private Button btnCancelar;
         private Button btnActualizar;
-        private CheckBox chkContract;
         private Label label8;
-        private TextBox txtState;
+        private TextBox txtJobLvl;
         private Label label7;
-        private TextBox txtCity;
         private Label label6;
-        private TextBox txtZip;
         private Label label5;
-        private TextBox txtAddress;
         private Label label4;
-        private TextBox txtPhone;
+        private TextBox txtMinit;
         private Label label3;
         private TextBox txtLast;
         private Label label2;
         private TextBox txtFirst;
-        private TextBox txtId;
         private Label label1;
+        private ComboBox cbJobId;
+        private ComboBox cbPubId;
+        private MaskedTextBox mtbId;
     }
 }

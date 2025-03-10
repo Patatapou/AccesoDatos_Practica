@@ -1,6 +1,6 @@
 ﻿namespace AccesoDatos_Practica
 {
-    partial class frmActualizaEmp
+    partial class ActualizaEmp
     {
         /// <summary>
         /// Required designer variable.
@@ -33,9 +33,7 @@
             label8 = new Label();
             txtJobLvl = new TextBox();
             label7 = new Label();
-            txtJobId = new TextBox();
             label6 = new Label();
-            txtPubId = new TextBox();
             label5 = new Label();
             label4 = new Label();
             txtMinit = new TextBox();
@@ -46,10 +44,14 @@
             txtId = new TextBox();
             label1 = new Label();
             dtpHireDate = new DateTimePicker();
+            button1 = new Button();
+            cbPubId = new ComboBox();
+            cbJobId = new ComboBox();
             SuspendLayout();
             // 
             // btnCancelar
             // 
+            btnCancelar.Cursor = Cursors.Hand;
             btnCancelar.Location = new Point(348, 266);
             btnCancelar.Margin = new Padding(2);
             btnCancelar.Name = "btnCancelar";
@@ -61,7 +63,8 @@
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(254, 265);
+            btnActualizar.Cursor = Cursors.Hand;
+            btnActualizar.Location = new Point(153, 266);
             btnActualizar.Margin = new Padding(2);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(90, 27);
@@ -73,7 +76,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(173, 199);
+            label8.Location = new Point(380, 136);
             label8.Margin = new Padding(2, 0, 2, 0);
             label8.Name = "label8";
             label8.Size = new Size(70, 20);
@@ -82,12 +85,13 @@
             // 
             // txtJobLvl
             // 
-            txtJobLvl.Location = new Point(173, 222);
+            txtJobLvl.BorderStyle = BorderStyle.FixedSingle;
+            txtJobLvl.Cursor = Cursors.IBeam;
+            txtJobLvl.Location = new Point(380, 159);
             txtJobLvl.Margin = new Padding(2);
             txtJobLvl.Name = "txtJobLvl";
             txtJobLvl.Size = new Size(121, 27);
             txtJobLvl.TabIndex = 33;
-            txtJobLvl.TextChanged += txtJobLvl_TextChanged;
             // 
             // label7
             // 
@@ -99,36 +103,20 @@
             label7.TabIndex = 32;
             label7.Text = "Job ID";
             // 
-            // txtJobId
-            // 
-            txtJobId.Location = new Point(15, 222);
-            txtJobId.Margin = new Padding(2);
-            txtJobId.Name = "txtJobId";
-            txtJobId.Size = new Size(121, 27);
-            txtJobId.TabIndex = 31;
-            // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(325, 199);
+            label6.Location = new Point(291, 199);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
             label6.Size = new Size(53, 20);
             label6.TabIndex = 30;
             label6.Text = "Pub ID";
             // 
-            // txtPubId
-            // 
-            txtPubId.Location = new Point(325, 222);
-            txtPubId.Margin = new Padding(2);
-            txtPubId.Name = "txtPubId";
-            txtPubId.Size = new Size(121, 27);
-            txtPubId.TabIndex = 29;
-            // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(155, 133);
+            label5.Location = new Point(15, 136);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
             label5.Size = new Size(71, 20);
@@ -138,7 +126,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(15, 133);
+            label4.Location = new Point(472, 72);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
             label4.Size = new Size(43, 20);
@@ -147,7 +135,9 @@
             // 
             // txtMinit
             // 
-            txtMinit.Location = new Point(15, 155);
+            txtMinit.BorderStyle = BorderStyle.FixedSingle;
+            txtMinit.Cursor = Cursors.IBeam;
+            txtMinit.Location = new Point(472, 94);
             txtMinit.Margin = new Padding(2);
             txtMinit.Name = "txtMinit";
             txtMinit.Size = new Size(121, 27);
@@ -165,6 +155,8 @@
             // 
             // txtLast
             // 
+            txtLast.BorderStyle = BorderStyle.FixedSingle;
+            txtLast.Cursor = Cursors.IBeam;
             txtLast.Location = new Point(235, 94);
             txtLast.Margin = new Padding(2);
             txtLast.Name = "txtLast";
@@ -183,6 +175,8 @@
             // 
             // txtFirst
             // 
+            txtFirst.BorderStyle = BorderStyle.FixedSingle;
+            txtFirst.Cursor = Cursors.IBeam;
             txtFirst.Location = new Point(15, 94);
             txtFirst.Margin = new Padding(2);
             txtFirst.Name = "txtFirst";
@@ -191,6 +185,8 @@
             // 
             // txtId
             // 
+            txtId.BorderStyle = BorderStyle.FixedSingle;
+            txtId.Cursor = Cursors.No;
             txtId.Location = new Point(15, 34);
             txtId.Margin = new Padding(2);
             txtId.Name = "txtId";
@@ -210,25 +206,58 @@
             // 
             // dtpHireDate
             // 
-            dtpHireDate.Location = new Point(155, 156);
+            dtpHireDate.Cursor = Cursors.Hand;
+            dtpHireDate.Location = new Point(15, 159);
             dtpHireDate.Name = "dtpHireDate";
             dtpHireDate.Size = new Size(295, 27);
             dtpHireDate.TabIndex = 38;
             // 
-            // frmActualizaEmp
+            // button1
+            // 
+            button1.Cursor = Cursors.Hand;
+            button1.Location = new Point(254, 266);
+            button1.Margin = new Padding(2);
+            button1.Name = "button1";
+            button1.Size = new Size(90, 27);
+            button1.TabIndex = 39;
+            button1.Text = "Eliminar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // cbPubId
+            // 
+            cbPubId.Cursor = Cursors.Hand;
+            cbPubId.FormattingEnabled = true;
+            cbPubId.Location = new Point(291, 222);
+            cbPubId.Name = "cbPubId";
+            cbPubId.Size = new Size(210, 28);
+            cbPubId.TabIndex = 60;
+            // 
+            // cbJobId
+            // 
+            cbJobId.Cursor = Cursors.Hand;
+            cbJobId.FormattingEnabled = true;
+            cbJobId.Location = new Point(15, 222);
+            cbJobId.Name = "cbJobId";
+            cbJobId.Size = new Size(234, 28);
+            cbJobId.TabIndex = 59;
+            // 
+            // ActualizaEmp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(462, 319);
+            BackColor = Color.Honeydew;
+            ClientSize = new Size(605, 419);
+            Controls.Add(cbPubId);
+            Controls.Add(cbJobId);
+            Controls.Add(button1);
             Controls.Add(dtpHireDate);
             Controls.Add(btnCancelar);
             Controls.Add(btnActualizar);
             Controls.Add(label8);
             Controls.Add(txtJobLvl);
             Controls.Add(label7);
-            Controls.Add(txtJobId);
             Controls.Add(label6);
-            Controls.Add(txtPubId);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(txtMinit);
@@ -238,8 +267,9 @@
             Controls.Add(txtFirst);
             Controls.Add(txtId);
             Controls.Add(label1);
-            Name = "frmActualizaEmp";
-            Text = "frmActualizaEmp";
+            Name = "ActualizaEmp";
+            Text = "ActualizaEmp";
+            Load += ActualizaEmp_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -251,9 +281,7 @@
         private Label label8;
         private TextBox txtJobLvl;
         private Label label7;
-        private TextBox txtJobId;
         private Label label6;
-        private TextBox txtPubId;
         private Label label5;
         private Label label4;
         private TextBox txtMinit;
@@ -264,5 +292,8 @@
         private TextBox txtId;
         private Label label1;
         private DateTimePicker dtpHireDate;
+        private Button button1;
+        private ComboBox cbPubId;
+        private ComboBox cbJobId;
     }
 }

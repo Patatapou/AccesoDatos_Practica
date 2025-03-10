@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AccesoDatos
 {
-    public partial class frmActualizaAutor : Form
+    public partial class ActualizaAutor : Form
     {
-        public frmActualizaAutor(string id, string fname, string lname, string phone, string address, string city, string state, string zip, bool contract)
+        public ActualizaAutor(string id, string fname, string lname, string phone, string address, string city, string state, string zip, bool contract)
         {
             InitializeComponent();
             txtFirst.Text = fname;
@@ -28,7 +28,7 @@ namespace AccesoDatos
 
         private void frmActualizaAutor_Load(object sender, EventArgs e)
         {
-
+            txtFirst.Focus();
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
@@ -51,6 +51,7 @@ namespace AccesoDatos
             }
             else
                 MessageBox.Show("Error al actualizar", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -58,9 +59,17 @@ namespace AccesoDatos
             this.Dispose();
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            Datos datos = new Datos();
+            bool f = datos.comando("delete from authors where au_id='" + txtId.Text + "'");
+            if (f == true)
+            {
+                MessageBox.Show("Registro eiminado", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+            else
+                MessageBox.Show("Error al eliminar el registro", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }

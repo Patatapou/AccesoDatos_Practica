@@ -1,6 +1,6 @@
 ﻿namespace AccesoDatos_Practica
 {
-    partial class frmActualizaTitulo
+    partial class ActualizaTitulo
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,10 @@
         {
             btnCancelar = new Button();
             btnActualizar = new Button();
-            chkContract = new CheckBox();
             label8 = new Label();
-            txtAdvance = new TextBox();
             label7 = new Label();
-            txtPrice = new TextBox();
             label6 = new Label();
-            txtRoyalty = new TextBox();
             label5 = new Label();
-            txtPubId = new TextBox();
             label4 = new Label();
             txtType = new TextBox();
             label2 = new Label();
@@ -46,15 +41,21 @@
             txtId = new TextBox();
             label1 = new Label();
             label3 = new Label();
-            txtSales = new TextBox();
             label9 = new Label();
             rtbNotes = new RichTextBox();
             label10 = new Label();
             dtpPubDate = new DateTimePicker();
+            button1 = new Button();
+            mtbPrice = new MaskedTextBox();
+            mtbAdvance = new MaskedTextBox();
+            mtbRoyalty = new MaskedTextBox();
+            mtbSales = new MaskedTextBox();
+            cbPubId = new ComboBox();
             SuspendLayout();
             // 
             // btnCancelar
             // 
+            btnCancelar.Cursor = Cursors.Hand;
             btnCancelar.Location = new Point(424, 425);
             btnCancelar.Margin = new Padding(2);
             btnCancelar.Name = "btnCancelar";
@@ -66,7 +67,8 @@
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(330, 424);
+            btnActualizar.Cursor = Cursors.Hand;
+            btnActualizar.Location = new Point(232, 425);
             btnActualizar.Margin = new Padding(2);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(90, 27);
@@ -75,52 +77,25 @@
             btnActualizar.UseVisualStyleBackColor = true;
             btnActualizar.Click += btnActualizar_Click;
             // 
-            // chkContract
-            // 
-            chkContract.AutoSize = true;
-            chkContract.Location = new Point(11, 425);
-            chkContract.Margin = new Padding(2);
-            chkContract.Name = "chkContract";
-            chkContract.Size = new Size(87, 24);
-            chkContract.TabIndex = 35;
-            chkContract.Text = "Contract";
-            chkContract.UseVisualStyleBackColor = true;
-            // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(424, 77);
+            label8.Location = new Point(448, 77);
             label8.Margin = new Padding(2, 0, 2, 0);
             label8.Name = "label8";
             label8.Size = new Size(66, 20);
             label8.TabIndex = 34;
             label8.Text = "Advance";
             // 
-            // txtAdvance
-            // 
-            txtAdvance.Location = new Point(424, 100);
-            txtAdvance.Margin = new Padding(2);
-            txtAdvance.Name = "txtAdvance";
-            txtAdvance.Size = new Size(121, 27);
-            txtAdvance.TabIndex = 33;
-            // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(300, 77);
+            label7.Location = new Point(342, 77);
             label7.Margin = new Padding(2, 0, 2, 0);
             label7.Name = "label7";
             label7.Size = new Size(41, 20);
             label7.TabIndex = 32;
             label7.Text = "Price";
-            // 
-            // txtPrice
-            // 
-            txtPrice.Location = new Point(300, 100);
-            txtPrice.Margin = new Padding(2);
-            txtPrice.Name = "txtPrice";
-            txtPrice.Size = new Size(102, 27);
-            txtPrice.TabIndex = 31;
             // 
             // label6
             // 
@@ -132,14 +107,6 @@
             label6.TabIndex = 30;
             label6.Text = "Royalty";
             // 
-            // txtRoyalty
-            // 
-            txtRoyalty.Location = new Point(15, 167);
-            txtRoyalty.Margin = new Padding(2);
-            txtRoyalty.Name = "txtRoyalty";
-            txtRoyalty.Size = new Size(100, 27);
-            txtRoyalty.TabIndex = 29;
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -149,14 +116,6 @@
             label5.Size = new Size(53, 20);
             label5.TabIndex = 28;
             label5.Text = "Pub ID";
-            // 
-            // txtPubId
-            // 
-            txtPubId.Location = new Point(155, 99);
-            txtPubId.Margin = new Padding(2);
-            txtPubId.Name = "txtPubId";
-            txtPubId.Size = new Size(83, 27);
-            txtPubId.TabIndex = 27;
             // 
             // label4
             // 
@@ -170,6 +129,8 @@
             // 
             // txtType
             // 
+            txtType.BorderStyle = BorderStyle.FixedSingle;
+            txtType.Cursor = Cursors.IBeam;
             txtType.Location = new Point(15, 99);
             txtType.Margin = new Padding(2);
             txtType.Name = "txtType";
@@ -188,6 +149,8 @@
             // 
             // txtTitle
             // 
+            txtTitle.BorderStyle = BorderStyle.FixedSingle;
+            txtTitle.Cursor = Cursors.IBeam;
             txtTitle.Location = new Point(155, 36);
             txtTitle.Margin = new Padding(2);
             txtTitle.Name = "txtTitle";
@@ -196,6 +159,8 @@
             // 
             // txtId
             // 
+            txtId.BorderStyle = BorderStyle.FixedSingle;
+            txtId.Cursor = Cursors.No;
             txtId.Location = new Point(15, 36);
             txtId.Margin = new Padding(2);
             txtId.Name = "txtId";
@@ -223,14 +188,6 @@
             label3.TabIndex = 39;
             label3.Text = "Sales";
             // 
-            // txtSales
-            // 
-            txtSales.Location = new Point(133, 167);
-            txtSales.Margin = new Padding(2);
-            txtSales.Name = "txtSales";
-            txtSales.Size = new Size(103, 27);
-            txtSales.TabIndex = 38;
-            // 
             // label9
             // 
             label9.AutoSize = true;
@@ -243,6 +200,8 @@
             // 
             // rtbNotes
             // 
+            rtbNotes.BorderStyle = BorderStyle.FixedSingle;
+            rtbNotes.Cursor = Cursors.IBeam;
             rtbNotes.Location = new Point(15, 253);
             rtbNotes.Name = "rtbNotes";
             rtbNotes.Size = new Size(530, 163);
@@ -261,41 +220,109 @@
             // 
             // dtpPubDate
             // 
+            dtpPubDate.Cursor = Cursors.Hand;
             dtpPubDate.Location = new Point(254, 167);
             dtpPubDate.Name = "dtpPubDate";
             dtpPubDate.Size = new Size(291, 27);
             dtpPubDate.TabIndex = 44;
             // 
-            // frmActualizaTitulo
+            // button1
+            // 
+            button1.Cursor = Cursors.Hand;
+            button1.Location = new Point(330, 425);
+            button1.Margin = new Padding(2);
+            button1.Name = "button1";
+            button1.Size = new Size(90, 27);
+            button1.TabIndex = 45;
+            button1.Text = "Eliminar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // mtbPrice
+            // 
+            mtbPrice.BorderStyle = BorderStyle.FixedSingle;
+            mtbPrice.Cursor = Cursors.IBeam;
+            mtbPrice.Location = new Point(342, 100);
+            mtbPrice.Mask = "9999999999999999";
+            mtbPrice.Name = "mtbPrice";
+            mtbPrice.Size = new Size(102, 27);
+            mtbPrice.TabIndex = 46;
+            mtbPrice.ValidatingType = typeof(int);
+            // 
+            // mtbAdvance
+            // 
+            mtbAdvance.BorderStyle = BorderStyle.FixedSingle;
+            mtbAdvance.Cursor = Cursors.IBeam;
+            mtbAdvance.Location = new Point(448, 100);
+            mtbAdvance.Mask = "9999999999999999";
+            mtbAdvance.Name = "mtbAdvance";
+            mtbAdvance.Size = new Size(102, 27);
+            mtbAdvance.TabIndex = 47;
+            mtbAdvance.ValidatingType = typeof(int);
+            // 
+            // mtbRoyalty
+            // 
+            mtbRoyalty.BorderStyle = BorderStyle.FixedSingle;
+            mtbRoyalty.Cursor = Cursors.IBeam;
+            mtbRoyalty.Location = new Point(15, 169);
+            mtbRoyalty.Mask = "9999999999999999";
+            mtbRoyalty.Name = "mtbRoyalty";
+            mtbRoyalty.Size = new Size(102, 27);
+            mtbRoyalty.TabIndex = 48;
+            mtbRoyalty.ValidatingType = typeof(int);
+            // 
+            // mtbSales
+            // 
+            mtbSales.BorderStyle = BorderStyle.FixedSingle;
+            mtbSales.Cursor = Cursors.IBeam;
+            mtbSales.Location = new Point(136, 167);
+            mtbSales.Mask = "9999999999999999";
+            mtbSales.Name = "mtbSales";
+            mtbSales.Size = new Size(102, 27);
+            mtbSales.TabIndex = 49;
+            mtbSales.ValidatingType = typeof(int);
+            // 
+            // cbPubId
+            // 
+            cbPubId.Cursor = Cursors.Hand;
+            cbPubId.FormattingEnabled = true;
+            cbPubId.Location = new Point(155, 100);
+            cbPubId.Name = "cbPubId";
+            cbPubId.Size = new Size(181, 28);
+            cbPubId.TabIndex = 68;
+            // 
+            // ActualizaTitulo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Honeydew;
             ClientSize = new Size(561, 460);
+            Controls.Add(cbPubId);
+            Controls.Add(mtbSales);
+            Controls.Add(mtbRoyalty);
+            Controls.Add(mtbAdvance);
+            Controls.Add(mtbPrice);
+            Controls.Add(button1);
             Controls.Add(dtpPubDate);
             Controls.Add(label10);
             Controls.Add(rtbNotes);
             Controls.Add(label9);
             Controls.Add(label3);
-            Controls.Add(txtSales);
             Controls.Add(btnCancelar);
             Controls.Add(btnActualizar);
-            Controls.Add(chkContract);
             Controls.Add(label8);
-            Controls.Add(txtAdvance);
             Controls.Add(label7);
-            Controls.Add(txtPrice);
             Controls.Add(label6);
-            Controls.Add(txtRoyalty);
             Controls.Add(label5);
-            Controls.Add(txtPubId);
             Controls.Add(label4);
             Controls.Add(txtType);
             Controls.Add(label2);
             Controls.Add(txtTitle);
             Controls.Add(txtId);
             Controls.Add(label1);
-            Name = "frmActualizaTitulo";
-            Text = "frmActualizaTitulo";
+            Name = "ActualizaTitulo";
+            Text = "ActualizaTitulo";
+            Load += ActualizaTitulo_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -304,7 +331,6 @@
 
         private Button btnCancelar;
         private Button btnActualizar;
-        private CheckBox chkContract;
         private Label label8;
         private TextBox txtAdvance;
         private Label label7;
@@ -312,7 +338,6 @@
         private Label label6;
         private TextBox txtRoyalty;
         private Label label5;
-        private TextBox txtPubId;
         private Label label4;
         private TextBox txtType;
         private Label label2;
@@ -325,5 +350,11 @@
         private RichTextBox rtbNotes;
         private Label label10;
         private DateTimePicker dtpPubDate;
+        private Button button1;
+        private MaskedTextBox mtbPrice;
+        private MaskedTextBox mtbAdvance;
+        private MaskedTextBox mtbRoyalty;
+        private MaskedTextBox mtbSales;
+        private ComboBox cbPubId;
     }
 }
